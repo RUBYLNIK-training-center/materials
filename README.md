@@ -2,7 +2,8 @@
 
 Course structure:
 
-**Introduction**
+[**Introduction**](https://github.com/RUBYLNIK-training-center/materials/blob/main/lectures/intro.md)
+
 
 About Course structure
 
