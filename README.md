@@ -1,6 +1,4 @@
-# Readme
-
-Course structure:
+# Course structure
 
 [**Introduction**](https://github.com/RUBYLNIK-training-center/materials/blob/main/lectures/intro.md)
 
