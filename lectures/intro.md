@@ -18,7 +18,7 @@ If you feel the lack of the basics knowledge (data types, basic algorithms), ple
 
 ### What you must already know to successfully pass the course
 
-- [HTTP Basics](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [Linux command line basics](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
-- [Git](https://learngitbranching.js.org/)
+- [🔗 HTTP Basics](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+- [🔗 Linux command line basics](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
+- [🔗 Git](https://learngitbranching.js.org/)
 
