@@ -21,7 +21,7 @@ You can divide the tests types into 3 parts: unit, integration, system.
 - System tests are intended to tests the system as a whole, usually using such instruments as Selenium or Cypress.
 
 On this step, try to focus on unit tests only.
-Here's the example of Factorial calculator and a unit tests for it.
+Here's the example of Factorial calculator and a unit test for it.
 
 ```ruby
 class Factorial
@@ -48,7 +48,7 @@ Please, take your time to carefully read the following materials and do not forg
 
 #### Links
 
-- 🔗 [2 hour lecture on testing with RSpec from Alexander (RUS)](https://www.youtube.com/watch?v=eVSaLSpHHpY "2 hour lecture on testing with RSpec from Alexander (RUS)") -- the video lecture covers pretty much all the basics you need to get the idea of testing using RSpec.
+- 🔗 [2 hour lecture on testing with RSpec from Alexander (RUS)](https://www.youtube.com/watch?v=eVSaLSpHHpY "2 hour lecture on testing with RSpec from Alexander (RUS)") -- the video lecture covers pretty much all the basics you need to get the idea of testing using RSpec [RUS].
 - 🔗 [How to make RSpec your friend (RUS)](https://docs.google.com/presentation/d/1o5jBPePt9AHF9oWTQLXGt1Q1iGuZHI7B8kSV87fmHYc/edit#slide=id.p "How to make RSpec your friend (RUS)") -- A short presentation about RSpec testing best practices.
 - 🔗 [ Better specs](https://www.betterspecs.org/ " Better specs") -- A web site collecting common styleguide agreements when writing tests in RSpec (note: sometimes the rules are violated so do not blindly follow them).
 - 🔗 [Practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html "Practical test pyramid") -- An advanced article about testing a real-world application. The examples are in Java but the overal theory is equal to all programming languages. (note: this is Okay if you won't understand anything).
