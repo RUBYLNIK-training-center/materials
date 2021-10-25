@@ -21,7 +21,7 @@ You can divide the tests types into 3 parts: unit, integration, system.
 - System tests are intended to tests the system as a whole, usually using such instruments as Selenium or Cypress.
 
 On this step, try to focus on unit tests only.
-Here's the example of Factorial calculator and a unit test for it.
+Here's the example of a Factorial calculator and a unit test for it.
 
 ```ruby
 class Factorial
@@ -44,7 +44,7 @@ end
 
 ---
 
-Please, take your time to carefully read the following materials and do not forget to write your own tests!
+Please, take your time to carefully read the following materials and do not forget to write your own tests for the Fibonacci calculator you've written!
 
 #### Links
 
