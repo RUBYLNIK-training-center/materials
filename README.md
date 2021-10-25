@@ -431,9 +431,9 @@ Live coding: Log parser in the OOP way
 ----------
 
 
-**Testing in Ruby I**
+[**Testing in Ruby I**](https://github.com/RUBYLNIK-training-center/materials/blob/main/lectures/testing_ruby.md)
 
-Why we need tests
+Why we need tests?
 RSpec basics
 
 ----------
