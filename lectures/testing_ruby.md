@@ -1,3 +1,7 @@
+The lecture above covers all of the basics you need to start writing your tests 
+- 🔗 [2 hour lecture on testing with RSpec (RUS)](https://www.youtube.com/watch?v=eVSaLSpHHpY "2 hour lecture on testing with RSpec from Alexander (RUS)")
+
+
 ## Testing Ruby code
 
 Testing is a fundamental part of the working process. In production systems, you literally can't survive without writing tests.
