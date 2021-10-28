@@ -53,7 +53,7 @@ Please, take your time to carefully read the following materials and do not forg
 #### Links
 
 - 🔗 [2 hour lecture on testing with RSpec from Alexander (RUS)](https://www.youtube.com/watch?v=eVSaLSpHHpY "2 hour lecture on testing with RSpec from Alexander (RUS)") -- the video lecture covers pretty much all the basics you need to get the idea of testing using RSpec.
-- 🔗 Presentation from the video above: https://github.com/alexshgov/rubizza-2018-testing
+- 🔗 [Presentation from the video above](https://github.com/alexshgov/rubizza-2018-testing)
 - 🔗 [Better specs](https://www.betterspecs.org/ " Better specs") -- A web site collecting common styleguide agreements when writing tests in RSpec (note: sometimes the rules are violated so do not blindly follow them).
 - 🔗 [Practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html "Practical test pyramid") -- An advanced article about testing a real-world application. The examples are in Java but the overal theory is equal to all programming languages. (note: this is Okay if you won't understand anything).
 - 🔗 [A book about testing practices](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627 "A book about testing practices") -- A nice book showing how to write an application in TDD manner step-by-step. Even thou this is not in Ruby, the overal examples are great and can be applied to Ruby applications as well.
