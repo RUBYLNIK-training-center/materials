@@ -1,5 +1,7 @@
 # Introduction
 
+TODO: Add info about paradigms
+
 Welcome to the Ruby & Ruby on Rails course.
 
 The first part of the course is self-passed. 
