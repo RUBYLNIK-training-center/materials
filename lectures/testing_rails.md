@@ -2,10 +2,9 @@
 
 We'll use RSpec as well for testing Ruby on Rails applications.
 
-In this material, we'll cover 4 different types of tests:
+In this material, we'll cover 3 different types of tests:
 
 - Model tests
-- Controllers tests
 - Requests tests
 - System tests
 
@@ -60,7 +59,7 @@ end
 
 ```
 
-Even thou this is a completely valid example, but the testing code itslef is boilerplate. This is why for such obvious tests like validations and associations it's better
+Even thou this is a completely valid example, but the testing code itself is boilerplate. This is why for such obvious tests like validations and associations it's better
 to use a helper gem called ["shoulda matchers"](https://github.com/thoughtbot/shoulda-matchers).
 
 It provides a useful set of expectations to test validations and associations easier. E.g.
@@ -70,12 +69,13 @@ RSpec.describe User, type: :model do
   it { is_expected.to validate_presence_of(:name) }
 end
 ```
+
 ---
 
 #### What is my model contains some methods?
 
 If there's more than validations and associations in your model, you should test it like any class, asking yourself a question: what is an input an ouput of the 
-function/method I'm testing? Example:
+method I'm testing? Example:
 
 Given there's a User, Post and Like models and we want to have a `#total_likes_received` method in our User model.
 
@@ -112,7 +112,65 @@ end
 
 ---
 
-### Controller tests
+### Request tests
+
+Request tests are the integration kind of tests which are aimed to test your app's API. They are smaller then system ones but still very useful since you verify a page (or a API call) works well end-to-end.
+
+Example:
+
+Given you have a Rails API which provides an ability to create users through the `POST /api/users` endpoint.
+
+To test it, you could write something like that:
+
+
+```ruby
+# frozen_string_literal: true
+
+require 'rails_helper'
+
+RSpec.describe 'POST /api/users', type: :request do
+  let(:request_uri) { "/api/users" }
+  let(:headers) { { 'Authorization' => "Token #{api_key}", 'Host' => 'api.example.com' } }
+  let(:api_key) { '1234' }
+  let(:params) { { user: user } }
+
+  context 'with valid params' do
+    let(:user) do
+      {
+        email: 'email@email.com',
+        password: '1234qwertyuiop',
+        forename: 'forename',
+        surname: 'surename',
+        telephone: '07854 943 728'
+      }
+    end
+
+    it 'creates a user and returns it' do
+      post request_uri, headers: headers, params: params
+
+      expect(status).to be 201
+      expect(response_json['forename']).to be_eql user[:forename]
+      expect(response_json['errors']).to be_nil
+    end
+  end
+
+  context 'with invalid params' do
+    let(:user) { { email: nil, password: nil, forename: nil, surname: nil, telephone: nil } }
+
+    it 'fails with 422, unprocessable entity' do
+      post request_uri, headers: headers, params: params
+
+      expect(status).to be 422
+      expect(response_json['errors']).not_to be_empty
+    end
+  end
+end
+
+```
+
+We verify that an API call correctly creates a user and fails if parameters list is invalid.
+
+(!) Since this is an integration test, it does not make sense to test ALL edge cases (remember the material about the testing pyramid). We want to have a balance, so tend to cover all edge cases in your unit tests, whehereas request tests must be used for more high-level checks.
 
 
 
