@@ -72,7 +72,7 @@ end
 
 ---
 
-#### What is my model contains some methods?
+#### What if my model contains some methods?
 
 If there's more than validations and associations in your model, you should test it like any class, asking yourself a question: what is an input an ouput of the 
 method I'm testing? Example:
@@ -173,8 +173,40 @@ We verify that an API call correctly creates a user and fails if parameters list
 (!) Since this is an integration test, it does not make sense to test ALL edge cases (remember the material about the testing pyramid). We want to have a balance, so tend to cover all edge cases in your unit tests, whehereas request tests must be used for more high-level checks.
 
 
+---
 
-✏️  
+### System tests
+
+This the the most high-level tests aiemd to "mimic" user behaviour. Basically, your test looks like a user interaction with a page.
+
+Example:
+
+```ruby
+
+require "rails_helper"
+
+RSpec.describe "User management", type: :system do
+  before do
+    driven_by(:selenium_chrome_headless)
+  end
+
+  it "shows the user management panel" do
+    visit "/users/new"
+
+    fill_in "Name", :with => "John Doe"
+    click_button "Create User"
+
+    expect(page).to have_text("User has been successfully created.")
+  end
+end
+
+```
+
+As you remember from the [video](https://www.youtube.com/watch?v=eVSaLSpHHpY), the more abstract test becomes, the more slower it gets. So it makes sense to cover  with system tests only critical paths of the project.
+
+#### Alternatives to system tests
+
+One of the most popular instruments for user behaviour tests is [Cypress](https://www.cypress.io). It pretty much provides the similar syntax to selenium, however, this is much more convenient tool.
 
 ---
 
@@ -182,4 +214,4 @@ Please, take your time to carefully read the following materials and do not forg
 
 #### Links
 
-- 🔗 [2 hour lecture on testing with RSpec from Alexander (RUS)](https://www.youtube.com/watch?v=eVSaLSpHHpY "2 hour lecture on testing with RSpec from Alexander (RUS)") -- the video lecture covers pretty much all the basics you need to get the idea of testing using RSpec.
+- 🔗 [Rails testing documentation](https://guides.rubyonrails.org/testing.html)
