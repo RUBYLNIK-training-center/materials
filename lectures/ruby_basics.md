@@ -377,3 +377,7 @@ if 0
 end
 # => Hey, 0 is considered to be a truth in Ruby
 ```
+
+Ruby basics best resource
+
+https://rubymonk.com/ -- must see!
