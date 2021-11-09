@@ -82,6 +82,8 @@ Rails framework overview, scaffolding
 
 **Rails routing**
 
+[**Introduction**](https://github.com/RUBYLNIK-training-center/materials/blob/main/lectures/rails_routing.md)
+
 ----------
 
 
