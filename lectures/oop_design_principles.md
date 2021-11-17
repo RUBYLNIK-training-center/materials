@@ -57,11 +57,11 @@ YAGNI stands for You aren't gonna need it. This principle means you should imple
 
 SOLID is an acronym for five separate object-oriented design principles:
 
-• The single-responsibility principle
-• The open-closed principle
-• The Liskov substitution principle
-• The interface segregation principle
-• The dependency inversion principle
+- The single-responsibility principle
+- The open-closed principle
+- The Liskov substitution principle
+- The interface segregation principle
+- The dependency inversion principle
 
 
 ---
