@@ -8,7 +8,7 @@ In this lecture you will learn when and how to use the delayed jobs for backgrou
 
 - sending massive newsletters
 - image resizing
-- http downloads
+- http downloads/uploads (you can prevent page lock until download is finished )
 - batch imports
 - spam checks
 
