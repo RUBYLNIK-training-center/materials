@@ -20,7 +20,7 @@ In this lecture you will learn when and how to use the metaprogramming.
 Let's say we are going to start a new project and hiring a team. Here's the ruby code that allows us to do so:
 
 
-
+```rb
 class MyTeam
   def frontend_dev
     puts 'hired a FE developer!'
@@ -74,7 +74,7 @@ Using this technique we simply provide an array of specialist we want to hire an
 using ```rb send``` (Ruby's default tool for calling methods by name).
 
 This code already looks better. But what if we will try to hire let's say devops? Our program will crash beecause we don't have such method:
-```rb undefined method `devops' for #<MyTeam:0x00007fd4f2129228> (NoMethodError) ```
+``` undefined method `devops' for #<MyTeam:0x00007fd4f2129228> (NoMethodError) ```
 
 Metaprogramming can help us here as well:
 
