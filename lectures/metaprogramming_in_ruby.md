@@ -110,7 +110,7 @@ end
 team_to_hire = ["frontend_dev", "backend_dev", "backend_dev", "project_manager", "devops"]
 MyTeam.new(team_to_hire).hire_a_team
 ```
-We simply reassigned ```method_missing``` for MyTeam class. This is very handy but has lot's of drawback as well and here's the biggest issue with metaprogramming:
+We simply reassigned ```method_missing``` for MyTeam class. This is very handy but has lots of drawbacks as well and here's the biggest issue with metaprogramming:
 - We can accidentally prevent program from default behaviour
 - Metaprogramming code is not that easy to debug and it's not very explicit
 
