@@ -18,7 +18,9 @@ In this lecture you will learn when and how to use the metaprogramming.
 ### Examples
 
 Let's say we are going to start a new project and hiring a team. Here's the ruby code that allows us to do so:
-```rb
+
+
+
 class MyTeam
   def frontend_dev
     puts 'hired a FE developer!'
@@ -37,7 +39,7 @@ MyTeam.new.frontend_dev
 MyTeam.new.backend_dev
 MyTeam.new.project_manager
 ```
-This works! But what happens if we will have to hire a really big team? We'll have to run code like ```rb MyTeam.new.frontend_dev ``` as much times as the number
+This works! But what happens if we will have to hire a really big team? We'll have to run code like ```MyTeam.new.frontend_dev ``` as much times as the number
 of people we want to hire. What if I told you that you solve this problem using metaprogramming?
 
 ```rb
@@ -108,7 +110,7 @@ end
 team_to_hire = ["frontend_dev", "backend_dev", "backend_dev", "project_manager", "devops"]
 MyTeam.new(team_to_hire).hire_a_team
 ```
-We simply reassigned ```rb method_missing``` for MyTeam class. This is very handy but has lot's of drawback as well and here's the biggest issue with metaprogramming:
+We simply reassigned ```method_missing``` for MyTeam class. This is very handy but has lot's of drawback as well and here's the biggest issue with metaprogramming:
 - We can accidentally prevent program from default behaviour
 - Metaprogramming code is not that easy to debug and it's not very explicit
 
