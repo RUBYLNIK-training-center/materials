@@ -39,7 +39,7 @@ MyTeam.new.frontend_dev
 MyTeam.new.backend_dev
 MyTeam.new.project_manager
 ```
-This works! But what happens if we will have to hire a really big team? We'll have to run code like ```rb MyTeam.new.frontend_dev ``` as much times as the number
+This works! But what happens if we will have to hire a really big team? We'll have to run code like ``` MyTeam.new.frontend_dev ``` as much times as the number
 of people we want to hire. What if I told you that you solve this problem using metaprogramming?
 
 ```rb
