@@ -1,14 +1,9 @@
 # Introduction
 
-TODO: Add info about paradigms
-
 Welcome to the Ruby & Ruby on Rails course.
 
-The first part of the course is self-passed. 
-Step-by-step, you're required to go through the learning materials and submit the homeworks within the provided deadline.
-
-Each lecture contains the links to articles / videos to watch, as well as homeworks to submit. 
-Many of the homeworks are self-passed, some of the you'd be required to submit and pass the CI checks.
+The following materials contains useful links and instruments to support you in your learning process.
+They almost follow the same order as our online lectures.
 
 ---
 
